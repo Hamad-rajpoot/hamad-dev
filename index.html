@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hamad Rajpoot | Senior WordPress Developer</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background: #0f172a;
+            color: white;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="fixed w-full top-0 z-50 bg-slate-900/80 backdrop-blur-lg border-b border-slate-800">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold gradient-text">
+            Hamad Rajpoot
+        </h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex gap-8 text-sm font-medium">
+
+            <a href="#about" class="hover:text-blue-400 transition">
+                About
+            </a>
+
+            <a href="#skills" class="hover:text-blue-400 transition">
+                Skills
+            </a>
+
+            <a href="#experience" class="hover:text-blue-400 transition">
+                Experience
+            </a>
+
+            <a href="#projects" class="hover:text-blue-400 transition">
+                Projects
+            </a>
+
+            <a href="#contact" class="hover:text-blue-400 transition">
+                Contact
+            </a>
+
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden text-white">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="h-8 w-8"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+
+            </svg>
+
+        </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+
+        <nav class="flex flex-col p-6 gap-4 text-sm font-medium">
+
+            <a href="#about" class="hover:text-blue-400 transition">
+                About
+            </a>
+
+            <a href="#skills" class="hover:text-blue-400 transition">
+                Skills
+            </a>
+
+            <a href="#experience" class="hover:text-blue-400 transition">
+                Experience
+            </a>
+
+            <a href="#projects" class="hover:text-blue-400 transition">
+                Projects
+            </a>
+
+            <a href="#contact" class="hover:text-blue-400 transition">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="min-h-screen flex items-center justify-center px-6 mt-8">
+
+    <div class="max-w-5xl text-center">
+
+        <p class="text-blue-400 uppercase tracking-widest mb-4"
+           data-aos="fade-up">
+
+            Senior WordPress Developer
+
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6"
+            data-aos="fade-up"
+            data-aos-delay="100">
+
+            Building Modern
+            <span class="gradient-text">
+                WordPress
+            </span>
+            & Full-Stack Solutions
+
+        </h1>
+
+        <p class="text-slate-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
+           data-aos="fade-up"
+           data-aos-delay="200">
+
+            Experienced Senior WordPress Developer with 5+ years of expertise
+            in WordPress, WooCommerce, PHP, Laravel, React.js, and performance optimization.
+
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4"
+             data-aos="fade-up"
+             data-aos-delay="300">
+
+            <a href="#projects"
+               class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold transition">
+
+                View Projects
+
+            </a>
+
+            <a href="https://github.com/Hamad-rajpoot"
+               target="_blank"
+               class="border border-slate-600 hover:border-blue-500 px-8 py-4 rounded-xl font-semibold transition">
+
+                GitHub Profile
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="py-24 px-6">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+        <div data-aos="fade-right">
+
+            <h2 class="text-4xl font-bold mb-6">
+                About Me
+            </h2>
+
+            <p class="text-slate-300 leading-relaxed mb-6">
+
+                I am a Senior WordPress Developer with 5+ years of experience building custom WordPress websites, WooCommerce stores, plugins, and scalable web applications.
+
+            </p>
+
+            <p class="text-slate-300 leading-relaxed">
+
+                My expertise includes custom theme development, API integrations, Laravel applications, performance optimization, Elementor, Avada, GeneratePress, React.js, and full-stack development.
+
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+
+            <div class="glass p-6 rounded-2xl text-center">
+
+                <h3 class="text-4xl font-bold text-blue-400 mb-2">
+                    5+
+                </h3>
+
+                <p class="text-slate-300">
+                    Years Experience
+                </p>
+
+            </div>
+
+            <div class="glass p-6 rounded-2xl text-center">
+
+                <h3 class="text-4xl font-bold text-blue-400 mb-2">
+                    50+
+                </h3>
+
+                <p class="text-slate-300">
+                    Projects Completed
+                </p>
+
+            </div>
+
+            <div class="glass p-6 rounded-2xl text-center">
+
+                <h3 class="text-4xl font-bold text-blue-400 mb-2">
+                    2
+                </h3>
+
+                <p class="text-slate-300">
+                    Published Plugins
+                </p>
+
+            </div>
+
+            <div class="glass p-6 rounded-2xl text-center">
+
+                <h3 class="text-4xl font-bold text-blue-400 mb-2">
+                    100%
+                </h3>
+
+                <p class="text-slate-300">
+                    Responsive Design
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills" class="py-24 px-6 bg-slate-900">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-16">
+
+            <h2 class="text-4xl font-bold mb-4">
+                Technical Skills
+            </h2>
+
+            <p class="text-slate-400">
+                Technologies and tools I work with
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+
+            <div class="glass p-6 rounded-2xl">PHP</div>
+            <div class="glass p-6 rounded-2xl">WordPress</div>
+            <div class="glass p-6 rounded-2xl">WooCommerce</div>
+            <div class="glass p-6 rounded-2xl">Laravel</div>
+            <div class="glass p-6 rounded-2xl">React.js</div>
+            <div class="glass p-6 rounded-2xl">JavaScript</div>
+            <div class="glass p-6 rounded-2xl">MySQL</div>
+            <div class="glass p-6 rounded-2xl">MongoDB</div>
+            <div class="glass p-6 rounded-2xl">REST APIs</div>
+            <div class="glass p-6 rounded-2xl">Elementor</div>
+            <div class="glass p-6 rounded-2xl">Avada</div>
+            <div class="glass p-6 rounded-2xl">GeneratePress</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="py-24 px-6">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+        <h2 class="text-5xl font-bold mb-6">
+
+            Let's Work Together
+
+        </h2>
+
+        <p class="text-slate-400 text-lg mb-10">
+
+            Available for WordPress development, WooCommerce projects,
+            custom plugin development, and performance optimization.
+
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+
+            <a href="mailto:ranahamad548@gmail.com"
+               class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold transition">
+
+                Email Me
+
+            </a>
+
+            <a href="https://github.com/Hamad-rajpoot"
+               target="_blank"
+               class="border border-slate-600 hover:border-blue-500 px-8 py-4 rounded-xl font-semibold transition">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="py-8 text-center border-t border-slate-800 text-slate-500">
+
+    © 2026 Hamad Rajpoot — Senior WordPress Developer
+
+</footer>
+
+<!-- =========================
+     AOS SCRIPT
+========================= -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+<!-- =========================
+     MOBILE MENU SCRIPT
+========================= -->
+
+<script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+</script>
+
+</body>
+</html>
